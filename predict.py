@@ -1,13 +1,15 @@
 import yaml
 import os
 import gdown
-import torch
-from model import Model
+from model import *
 import transformers
+import streamlit as st
 
 with open('config.yaml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
 
+
+@st.cache_resource()
 def load_model():
     if not os.path.isfile('model.pt'):
         print('No model found, download starting...')
