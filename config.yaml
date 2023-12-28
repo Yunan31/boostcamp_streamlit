@@ -1,0 +1,5 @@
+# 모델 구글드라이브 주소
+model_path: 'https://drive.google.com/uc?id=1k7Np8RvNSbXOMYM48uWKEyEFVqZ0L4S2'
+
+# 사용한 huggingface 모델
+model_name: 'kykim/electra-kor-base'
